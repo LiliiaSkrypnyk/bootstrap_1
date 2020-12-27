@@ -1,0 +1,134 @@
+/*ogolne*/  
+  p, a { 
+    font-family: 'Jura', sans-serif;
+	font-size: 25px;
+   }
+   h1 {
+	font-family: 'Jura', sans-serif;
+	font-size: 40px; 
+    font-style: italic;	
+	font-weight: bold;	
+   }
+   h3{
+	font-family: 'Jura', sans-serif;
+	font-size: 30px; 
+    font-style: italic;	
+	font-weight: bold;	
+   }
+   h4{
+	font-family: 'Jura', sans-serif;
+	font-size: 20px; 
+	color: white;
+	text-shadow:2px 2px 5px white;
+    }
+   
+   body {
+	   position: relative;
+	   }
+	   
+ /*osobne dla każdego rozdiału*/  
+ /*breadcrumb*/ 
+.breadcrumb{
+      padding-top: 40px;
+      height: 200px;
+      background-color: rgb(77, 175, 175);
+      text-align: center;
+  }
+  /*karuzela*/
+  #section1 {
+	  padding-top:10px;height:500px;color: #fff; background-color: #1E88E5;
+	  }  
+  .carousel-inner {
+	  width:60%; margin-left: 20%; margin-right: 20%;
+  }
+  .carousel-inner img {
+    width: 100%;
+    height: 550px;
+  } 
+
+/*accordion*/
+	#section2 {
+	  padding-top:10px;height:500px;color: #fff; background-color: #673ab7;
+	  }
+	  .panel-group {
+      padding-top: 50px;
+      padding-bottom: 50px;
+      height: 500px;
+      background-color: rgb(119, 221, 98);
+
+		}
+  .panel-body {
+      background-color:rgb(139, 243, 70);
+  }
+ 
+ /*forms*/
+ #section3 {
+	  padding-top:10px;height:500px;color: #fff; background-color: #ff9800;
+	  } 
+	  
+	  
+ /*modal*/ 
+ #section4 {
+	  padding-top:10px;height:500px;color: #fff; background-color: #00bcd4;
+	  }
+ .modal-dialog {
+  position: fixed;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+.modal-content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: turquoise;
+
+}
+.modal-header {
+	  position: absolute;
+	  top: 0;
+	  right: 0;
+	  left: 0;
+	  height: 50px;
+	  padding: 10px;
+	  border: 0;
+}
+.modal-body {
+	  position: absolute;
+	  top: 50px;
+	  bottom: 60px;
+	  width: 100%;
+	  font-weight: 300;
+	  overflow: auto;
+}
+.modal-footer {
+	  position: absolute;
+	  right: 0;
+	  bottom: 0;
+	  left: 0;
+	  height: 60px;
+	  padding: 10px;
+}
+.ModalneOkno{
+    height: 700px;
+    text-align: center;
+    padding-top: 300px;
+    padding-bottom: 50px;
+    background-color: thistle;
+}	
+
+
+/*toolip*/ 	
+ #section5 {
+	  padding-top:10px;height:500px;color: #fff; background-color: #00bcd4;
+	  }	 
+ .tooltip{
+    height: 700px;
+	padding-top: 300px;
+	padding-bottom: 50px;
+	background-color: tomato;
+	text-align: center;
+}

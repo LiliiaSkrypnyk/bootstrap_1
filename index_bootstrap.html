@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bootstrap</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300;400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300;400;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+  
+  <link rel="stylesheet" href="styles/css/styles_bootstrap.css"/>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Bootstrap - my first project</a>
+    </div>
+    <div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="#section1">Karuzela</a></li>
+          <li><a href="#section2">Accordion</a></li>
+          <li><a href="#section3">Any form</a></li>
+		  <li><a href="#section4">Modal</a></li>
+		  <li><a href="#section5">Tooltip</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>    
+
+<div >
+     
+<ol class="breadcrumb" id="crumb" >
+    <h1 >Breadcrumb</h1> 
+    <li class="breadcrumb-item"><a href="#">Bootstrap - my first project</a></li>
+    <li class="breadcrumb-item"><a href="#crumb">Breadcrumb</a></li>
+    <li class="breadcrumb-item"><a href="#section1">Karuzela</a></li>
+    <li class="breadcrumb-item"><a href="#section2">Accordion</a></li>
+    <li class="breadcrumb-item"><a href="#section3">Any form</a></li>
+    <li class="breadcrumb-item"><a href="#section4">Modal</a></li>
+	<li class="breadcrumb-item"><a href="#section5">Tooltip</a></li>
+</ol>
+</div> 
+
+<div id="section1" class="container-fluid">
+  <h1>Karuzela</h1>
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+
+      <div class="item active">
+        <img src="styles/img/la.jpg" alt="Los Angeles" style="width:100%;">
+        <div class="carousel-caption">
+          <h3>Los Angeles</h3>
+          <h4>Najludniejsze miasto amerykańskiego stanu Kalifornia, a zarazem drugie pod względem liczby mieszkańców miasto w Stanach Zjednoczonych, za sprawą 
+		  populacji liczącej ok. 4 mln mieszkańców.</h4>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="styles/img/chicago.jpg" alt="Chicago" style="width:100%;">
+        <div class="carousel-caption">
+          <h3>Chicago</h3>
+          <h4>Miasto w Stanach Zjednoczonych, położone nad jeziorem Michigan w stanie Illinois.</h4>
+        </div>
+      </div>
+    
+      <div class="item">
+        <img src="styles/img/ny.jpeg" alt="New York" style="width:100%;">
+        <div class="carousel-caption">
+          <h3>New York</h3>
+          <h4>Miasto w Stanach Zjednoczonych o największej liczbie mieszkańców, a zarazem centrum jednej z najludniejszych aglomeracji na świecie.</h4>
+        </div>
+      </div>
+  
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+
+<div id="section2" class="container-fluid">
+  <h1>Accordion</h1>
+    <div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">What is La famous for?</a>
+        </h4>
+      </div>
+      <div id="collapse1" class="panel-collapse collapse in">
+        <div class="panel-body">Some of the world's best-known and most iconic landmarks and attractions call Los Angeles home: the Hollywood Sign; 
+								Griffith Observatory; the Getty Center; the Walt Disney Concert Hall at the Music Center in Downtown L.A.; the Hollywood Walk of Fame; 
+								the TCL Chinese Theatre; Space Shuttle Endeavour at the California ...</div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">What is Chicago famous for?</a>
+        </h4>
+      </div>
+      <div id="collapse2" class="panel-collapse collapse">
+        <div class="panel-body">Some of the many things Chicago is famous for are: Chicago-style hot dogs, Chicago-style (deep dish) pizza, Maxwell 
+								Street Polish Sausage, jazz music, and 1920s gangsters, for example Al Capone. Chicago is also known for architecture, 
+								for example the Sears Tower and museums. It is also known for its loyal sports fans.
+		</div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">What is NY famous for?</a>
+        </h4>
+      </div>
+      <div id="collapse3" class="panel-collapse collapse">
+        <div class="panel-body">Famous politician and 'Democrat' leader Hillary Clinton, rappers Jay Z, 50 Cent and Sean Combs (popularly known as P. Diddy),
+								singers Jennifer Lopez, Alicia Keys, Nicki Minaj and Billy Joel are a few contemporary icons who belong to the state of New York.
+		</div>
+      </div>
+    </div>
+  </div> 
+</div>
+
+
+<div id="section3" class="container-fluid">
+  <h1>Any form</h1>
+	<form>
+	  <div class="form-row">
+		<div class="form-group">
+		<label for="inputAddress">Imię</label>
+		<input type="text" class="form-control" id="inputAddress" placeholder="Wpisz imię/imiona">
+	  </div>
+	  <div class="form-group">
+		<label for="inputAddress">Nazwisko</label>
+		<input type="text" class="form-control" id="inputAddress" placeholder="Wpisz nazwisko">
+	  </div>
+		<div class="form-group col-md-6">
+		  <label for="inputEmail4">Email</label>
+		  <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+		</div>
+		<div class="form-group col-md-6">
+		  <label for="inputEmail4">Telefon</label>
+		  <input type="email" class="form-control" id="inputEmail4" placeholder="Numer telefonu">
+		</div>
+	  </div>
+	  <div class="form-group">
+		<label for="inputAddress">Ulica</label>
+		<input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+	  </div>
+	  <div class="form-group">
+		<label for="inputAddress2">Nr domu/nr mieszkania</label>
+		<input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+	  </div>
+	  <div class="form-row">
+		<div class="form-group col-md-6">
+		  <label for="inputCity">Wojewódstwo</label>
+		  <input type="text" class="form-control" id="inputCity">
+		</div>
+		<div class="form-group col-md-4">
+		  <label for="inputState">Miejscowość</label>
+		  <input type="text" class="form-control" id="inputState">
+		</div>
+		<div class="form-group col-md-2">
+		  <label for="inputZip">Kod pocztowy</label>
+		  <input type="text" class="form-control" id="inputZip">
+		</div>
+	  </div>
+	  <button type="submit" class="btn btn-primary">Prześlij</button>
+	  <button type="reset"  class="btn btn-danger">Resetuj</button>
+	</form>
+</div>
+
+
+
+<div id="section4" class="container-fluid">
+  <h1>Modal</h1>
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Kliknij aby się dowiedzieć ciekawy fakt o Stanach Zjednoczonych!</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+   
+ <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">What is the current US population 2020?</h4>
+        </div>
+        <div class="modal-body">
+          <p>331 million people</p>
+		  <p>The U.S. population today, at the start of 2020, numbers just over 331 million people. The U.S. is the third largest country in the world, 
+		  outnumbered only by the two demographic billionaires, China and India, at just over 1.4 billion and just under 1.4 billion, respectively.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Zamknij</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<div id="section5" class="container-fluid">
+  <h1>Tooltip</h1>
+  <a href="#" data-toggle="tooltip" title="Liliia Skrypnyk">Umieść kursor myszy na mnie aby dowiedzieś sie kto jest autorem tej strony!</a>
+</div>
+
+<script>
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();   
+});
+</script>
+   
+  
+
+</body>
+</html>
